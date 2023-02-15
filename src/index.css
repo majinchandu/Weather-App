@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #d5d4d4;
+}
+#iconphoto{
+  height: 50px;
+}
+:root{
+  --section-overlay: rgba(0,0,0,0.7);
+  --background-overlay: rgba(0,0,0,0.2)
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* helps to place the text in the box to the centre*/
+}
+.App{
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+.overlay{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-overlay);
+}
+.container{
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center; /* centre of the page */
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.section{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  color: white;
+}
+.section_inputs,.section_temperature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section-overlay);
+}
+
+.section_inputs>input{ /*section input class ke andar jo input hai usko target karo*/
+  border: 0.4px solid wheat;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  color: #d5d4d4;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: 300;
+  outline: none;
+}
+
+.section_inputs>button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 00.4rem;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: whitesmoke
+}
+.section_inputs>button:hover{
+  cursor: pointer;
+  background-color: grey
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-h3 {
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: capitalize;
+  }
+.temperature>h1 {
+  font-size: 60px;
+}
+#cityname{
+  text-transform: uppercase;
+}
